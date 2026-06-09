@@ -38,3 +38,16 @@ console.log(6473 / 100);
 
 console.log(2 ** 2);
 console.log(2 ** 3);
+
+// Comparison Operator (==, ===, !=, !==, <, >, <=, >=);
+
+console.log(1 == "2"); // number == string => true
+console.log(1 === "1"); // value + type 
+console.log(1 != 10);
+console.log(1 !== "1");
+
+console.log(1 < -1);
+console.log(1 > 1);
+console.log(1 <= 1);
+console.log(1 >= 1);
+
