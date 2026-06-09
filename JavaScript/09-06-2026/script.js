@@ -51,3 +51,51 @@ console.log(1 > 1);
 console.log(1 <= 1);
 console.log(1 >= 1);
 
+let a = 10;
+const b = 20;
+
+const c = a + b;
+console.log(c);
+
+// a = a + b; // a += b;
+a += b; // a = a + b;
+a -= b; // a = a - b;
+a *= b; // a = a * b;
+a /= b; // a = a / b;
+
+console.log(a);
+
+let num1 = 10;
+let num2 = 20;
+
+// unary increment & decrement operator (++, --)
+num1++;
+console.log(num1);
+num1--;
+console.log(num1);
+
+// pre-increment & pre-decrement operator (++num --num)
+// post-increment & post-decrement operator (num++, num--)
+
+let n1 = 1;
+let n2 = 1;
+
+let n3 = ++n1;
+console.log(n3, n1);
+let n4 = n2++;
+console.log(n4, n2);
+
+let n5 = --n1;
+console.log(n5, n1);
+let n6 = n2--;
+console.log(n6, n2);
+
+const number1 = prompt("Please enter your first number?");
+const number2 = prompt("Please enter your second number?");
+const sum = Number(number1) + Number(number2);
+console.log(sum);
+
+// cube, volume, area
+
+// calculate
+
