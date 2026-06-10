@@ -98,4 +98,3 @@ console.log(sum);
 // cube, volume, area
 
 // calculate
-
