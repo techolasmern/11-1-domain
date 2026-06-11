@@ -1,0 +1,16 @@
+1.  Write a function that checks whether a number is even or odd.
+2.  Write a function that determines whether a student has passed an examination.
+3.  Write a function that checks whether a person is eligible to vote.
+4.  Write a function that finds the larger of two numbers.
+5.  Write a function that determines whether a year is a leap year.
+6.  Write a function that checks whether a number is positive, negative, or zero.
+7.  Write a function that determines whether a number is divisible by 5.
+8.  Write a function that assigns a grade based on a student's mark.
+9.  Write a function that checks whether a number is a multiple of 10.
+10. Write a function that determines whether a customer is eligible for a discount.
+
+11. A movie theater offers child tickets and adult tickets. Write a function to determine which ticket a customer should receive.
+12. A bank allows withdrawals only when sufficient balance is available. Write a function to check whether a withdrawal can be processed.
+13. A library permits book borrowing only to active members. Write a function to determine whether a member can borrow a book.
+14. An e-commerce website provides free delivery for eligible orders. Write a function to determine whether free delivery should be applied.
+15. A company awards bonuses to eligible employees. Write a function to determine whether an employee qualifies for a bonus.
