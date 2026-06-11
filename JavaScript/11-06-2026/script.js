@@ -3,9 +3,9 @@
 // AND, OR, NOT
 // &&, ||, !
 
-// console.log(true && false && true); // -> true
-// console.log(false || true || false);
-// console.log(!undefined); // null, 0, ""
+// console.log(true && false && true); // => true
+// console.log(false || true || false); // => true
+// console.log(!undefined); // => true
 
 console.log(10 == 10 && 3 < 7); // => true && true => true;
 console.log(78 < 100 && 4 == 5); // => true && false => false;
