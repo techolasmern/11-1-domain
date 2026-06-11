@@ -16,7 +16,7 @@ console.log(1 < -1 || 7 <= 3); // => false || false => false;
 console.log(!null); 
 // false value -> undefind, null, 0, ""
 
-// if, else, if else -> control statements
+// if, else, if else -> control statements (Conditional statement)
 
 if (10 < 5) {
     // statement
