@@ -76,3 +76,23 @@ function findPrime(n) {
 }
 
 console.log(findPrime(33));
+
+// *  *  *  *  *
+// *  *  *  *  *
+// *  *  *  *  *
+// *  *  *  *  *
+// *  *  *  *  *
+let row = "";
+for (let i = 0; i < 5; i++){
+    for (let j = 0; j < 5; j++){
+        row += " * ";
+    }
+    row += "\n"
+}
+console.log(row);
+
+// *  *  *  *  *
+// *           *
+// *           *
+// *           *
+// *  *  *  *  *
