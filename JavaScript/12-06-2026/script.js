@@ -57,5 +57,22 @@ function sumOfNNumbers(n) {
     return sum;
 }
 
+// 12321 - 12321, 1535 - 1^4 + 5^4 + 3^4 + 5^4 == 1535
+
 const res = sumOfNNumbers(100);
 console.log(res);
+
+// Number prime
+
+// 7 -> 2,3.5
+
+function findPrime(n) {
+    for (let k = 2; k <= n / 2; k++){
+        if (n % k == 0) {
+            return "not prime"
+        }
+    }
+    return "is prime";
+}
+
+console.log(findPrime(33));

@@ -78,3 +78,4 @@ function add(a, b) {
 }
 
 //  p/n * 100 -> find % of a number
+
