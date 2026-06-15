@@ -143,3 +143,33 @@ function printStar2(n) {
 }
 
 console.log(printStar2(5));
+
+//              *
+//           *  *
+//        *  *  *
+//     *  *  *  *
+//  *  *  *  *  *
+
+
+//        *
+//      *   *
+//    *   *   *
+//  *   *   *   *
+//*   *   *   *   *
+
+
+const pRoof = (n) =>{
+    let pattern = "";
+    for (let i = 0; i < n; i++){
+        for (let j = n - i - 1; j > 0; j--){
+            pattern += " "
+        }
+        for (let k = 0; k < i + 1; k++){
+            pattern += "* "
+        }
+        pattern += "\n"
+    }
+    console.log(pattern);
+}
+
+pRoof(5)
