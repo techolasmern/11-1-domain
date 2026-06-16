@@ -33,3 +33,29 @@ function is_palindrome(number) {
 }
 
 console.log(is_palindrome(123))
+
+const array = [1, 2, 4, 110, 6, 200, 23, 43, 3, 200, 199];
+
+let largest = array[0];
+for (let index = 1; index < array.length; index++){
+    const num = array[index];
+    if (num > largest) {
+        largest = num;
+    }
+}
+
+console.log(largest);
+
+let lv = array[0];
+let sl = -Infinity;
+for (let index = 1; index < array.length; index++) {
+    const num = array[index];
+    if (num > lv) {
+        sl = lv
+        lv = num;
+    } else if (num != lv && num > sl) {
+        sl = num;
+    }
+}
+
+console.log(sl);
