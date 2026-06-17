@@ -64,3 +64,30 @@ const printDay = n => {
 }
 
 console.log(printDay(3))
+
+// swap
+let a = 10;
+let b = 20;
+
+let t = a;
+a = b;
+b = t;
+
+console.log(a, b);
+
+// sorting
+const arr = [1, 5, 3, 2, 18, 7]; // ->  < 6 - 1 
+
+for (let i = 0; i < arr.length - 1; i++){
+    for (let j = i + 1; j < arr.length; j++){
+        const selected = arr[i];
+        const numberToCheck = arr[j];
+        if (numberToCheck < selected) {
+            const t = arr[i];
+            arr[i] = arr[j];
+            arr[j] = t;
+        }
+    }
+}
+
+console.log(arr);
