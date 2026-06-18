@@ -67,3 +67,31 @@ console.log(numbers.slice(0, 2));
 console.log(numbers.slice(-2));
 
 console.log(numbers.join("-"));
+
+// callback ->
+
+// 89******43;
+
+
+const hideNumber = (phone=1111111111) => {
+    const toStr = phone.toString();
+    const leftDigits = toStr.slice(0, 2);
+    const rightDigits = toStr.slice(-2);
+    return leftDigits + "******" + rightDigits;
+}
+
+console.log(hideNumber(987654321))
+console.log(hideNumber(6743265897))
+console.log(hideNumber())
+
+// email -> john123@gmail.com --> joh****@gmail.com
+
+const hideMail = (email="example@gmail.com") => {
+    const splitted = email.split("@");
+    const username = splitted[0];
+    const domain = splitted[1];
+    const hide = username.slice(0, -4) + "******";
+    return hide + "@" + domain;
+
+}
+console.log(hideMail("john123@gmail.com"));
