@@ -30,9 +30,40 @@ console.log(str.slice(-2));
 console.log(str.slice(0, -2));
 
 console.log(str.trim())
-console.log(str.trim().split(""))
+console.log(str.trim().split("!"))
 
 
+// Array Methods
 
+const array = [1, 2, 3, 4, 5];
 
+// add value - last
+array.push(6, 7, 8, 9, 10);
+const removedValue = array.pop()
+console.log(removedValue);
 
+array.unshift(-3, -2, -1, 0);
+const val = array.shift();
+console.log(val);
+console.log(array);
+
+// splice();
+array.splice(2, 0, 100, 200, 300, 400, 500);
+console.log(array);
+
+const numbers = [1, 2, 3, 4, 5, 1];
+
+numbers[5] = 6
+
+console.log(numbers);
+
+console.log(numbers[0]);
+console.log(numbers.at(0));
+console.log(numbers.indexOf(3, 4));
+console.log(numbers.includes(40));
+console.log(numbers.lastIndexOf(1));
+
+console.log(numbers.slice(0, 2));
+console.log(numbers.slice(-2));
+
+console.log(numbers.join("-"));
