@@ -64,9 +64,12 @@ getArea(10, 20, getValume, displayVolume);
 
 // for of
 const runLoop = (array=[], callback) => {
-    for (const element of array) {
-        const idx = array.indexOf(element);
-        callback(element, idx, array);
+    // for (const element of array) {
+    //     const idx = array.indexOf(element);
+    //     callback(element, idx, array);
+    // }
+    for (let i = 0; i < array.length; i++) {
+        callback(array[i] /* element */, i /* index */, array /* Same array */);
     }
 }
 
