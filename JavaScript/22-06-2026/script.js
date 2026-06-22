@@ -41,3 +41,39 @@ const findSum = (a, b, callback) => {
 
 findSum(10, 20, display);
 
+// --------------------------------------------------
+
+const displayVolume = (value) => {
+    console.log(value);
+}
+
+const getValume = (area, h, callback) => {
+    const v = area * h;
+    callback(v);
+}
+
+const getArea = (l, b, callback1, callback2) => {
+    const area = l * b;
+    callback1(area, 20, callback2);
+}
+
+getArea(10, 20, getValume, displayVolume);
+
+// ---------------------------------------------------------
+
+
+// for of
+const runLoop = (array=[], callback) => {
+    for (const element of array) {
+        const idx = array.indexOf(element);
+        callback(element, idx, array);
+    }
+}
+
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+runLoop(arr, (element, index, array) => {
+    console.log(element, index, array);
+});
+
+// forEach, map, filter, find, findIndex, reduce
