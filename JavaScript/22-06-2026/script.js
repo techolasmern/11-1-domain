@@ -63,20 +63,41 @@ getArea(10, 20, getValume, displayVolume);
 
 
 // for of
-const runLoop = (array=[], callback) => {
-    // for (const element of array) {
-    //     const idx = array.indexOf(element);
-    //     callback(element, idx, array);
-    // }
-    for (let i = 0; i < array.length; i++) {
-        callback(array[i] /* element */, i /* index */, array /* Same array */);
-    }
-}
+// const runLoop = (array=[], callback) => {
+//     // for (const element of array) {
+//     //     const idx = array.indexOf(element);
+//     //     callback(element, idx, array);
+//     // }
+//     for (let i = 0; i < array.length; i++) {
+//         callback(array[i] /* element */, i /* index */, array /* Same array */);
+//     }
+// }
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-runLoop(arr, (element, index, array) => {
-    console.log(element, index, array);
-});
+// runLoop(arr, (element, index, array) => {
+//     console.log(element, index, array);
+// });
 
 // forEach, map, filter, find, findIndex, reduce
+
+// remove middle element of an array - pop, push
+
+const removed = [];
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const upto = array.length / 2; // 2.5
+for (let i = 0; i <= upto; i++){
+    removed.push(array.pop());
+}
+
+for (let k = 0; k <= array.length % 2; k++){
+    removed.pop();
+}
+
+for (let j = 0; removed.length > 0; j++){
+    array.push(removed.pop());
+}
+
+console.log(removed, array);
+
