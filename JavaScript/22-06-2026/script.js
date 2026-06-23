@@ -101,3 +101,11 @@ for (let j = 0; removed.length > 0; j++){
 
 console.log(removed, array);
 
+const ar = [1, 9, 3, 6, 7, 2, 4, 8, 9, 3];
+           [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+// index == 2
+// indexOf() -> 2
+
+// i = 0, index: 0
+// i = 1, index: 1
+// i = 8, index: 

@@ -72,7 +72,6 @@ console.log(numbers.join("-"));
 
 // 89******43;
 
-
 const hideNumber = (phone=1111111111) => {
     const toStr = phone.toString();
     const leftDigits = toStr.slice(0, 2);
