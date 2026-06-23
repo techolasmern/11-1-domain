@@ -70,3 +70,12 @@ console.log(names);
 const updatedNames = strArr.map(name => name.toUpperCase());
 console.log(updatedNames);
 
+const a = "AMAL"; // String
+const b = 10; // Number
+const c = true; // Boolean
+
+console.log(typeof a);
+console.log(typeof b);
+console.log(typeof c);
+
+// map, filter, reduce
