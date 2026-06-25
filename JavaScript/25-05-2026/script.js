@@ -42,3 +42,31 @@ console.log(object);
 
 console.log(object.address.city);
 console.log(object.skills);
+
+// Object Methods
+
+// Object.keys(), Object.values(), Object.entries(), Object.freeze(), Object.seal(), Object.hasOwn()
+
+const user = {
+    first_name: "Rathul",
+    last_name: "Dev",
+    age: 25,
+    address: {
+        city: "Kozhikode",
+        state: "Keralam"
+    }
+}
+
+console.log(Object.hasOwn(user.address, "state"));
+
+console.log(Object.values(user));
+console.log(Object.keys(user));
+console.log(Object.entries(user)); // [ [key, value], [key, value], [key, value] ];
+
+// Object.freeze(user); // Can't add or modify fields.
+Object.seal(user); // Can't add fields but can modify
+
+user.skjhkdf = 90;
+user.age = 30;
+
+console.log(user);
