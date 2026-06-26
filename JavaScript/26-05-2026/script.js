@@ -41,4 +41,38 @@ console.log(remainingObj);
 
 const arr = [1, 6, 3, 5];
 const [fv, sv, ...remaining] = arr;
-console.log(fv, sv, remaining)
+console.log(fv, sv, remaining);
+
+// local storage & session storage
+
+// localStorage
+
+localStorage.setItem("theme", "dark");
+localStorage.setItem("sample", "sample_value");
+
+const res1 = localStorage.getItem("sample");
+console.log(res1)
+
+const res2 = localStorage.getItem("theme");
+console.log(res2);
+
+// localStorage.removeItem("theme");
+
+const res = localStorage.getItem("theme");
+console.log(res);
+
+// localStorage.clear();
+
+// session storage
+
+sessionStorage.setItem("session_theme", "session_dark");
+
+const res4 = sessionStorage.getItem("session_theme");
+console.log(res4);
+
+// sessionStorage.removeItem("session_theme");
+
+const res5 = sessionStorage.getItem("session_theme");
+console.log(res5);
+
+sessionStorage.clear();
