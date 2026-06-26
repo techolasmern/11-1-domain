@@ -22,11 +22,23 @@ const obj = { name: "Ajmal", age: 20 };
 
 // assign
 
-// spread operator - create a copy
+// Spread Operator - create a copy of array / object.
 const newArr = [...array];
 newArr.push(5);
 console.log(array, newArr);
 
 const newObjt = { ...obj };
-obj.name = "skdjhfiwuehfklsd"
-console.log(obj, newObjt)
+obj.name = "Midhun";
+console.log(obj, newObjt);
+
+// destructure, Rest Operator -> to get remaining array elements or key-value (object) pairs.
+
+const student = { name: "Amal", age: 18, city: "Kozhikode", state: "Keralam", course: "CS" };
+
+const { state, age, ...remainingObj } = student;
+console.log(state, age);
+console.log(remainingObj);
+
+const arr = [1, 6, 3, 5];
+const [fv, sv, ...remaining] = arr;
+console.log(fv, sv, remaining)
