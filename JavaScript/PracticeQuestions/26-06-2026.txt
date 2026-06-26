@@ -26,10 +26,10 @@ const employees = [
 7.  Generate an array with each employee's department and salary.
 8.  Find all employees who are older than 35 years.
 9.  List all employees who work in the "Engineering" department.
-10. Find the highest salary among all employees.
+10. Find the highest salary among all employees. (using Math.max())
 11. Compute the total number of employees. (without using length property)
 12. Create a list of names of employees who earn more than $70,000
-13. List of formatted strings (name and department) for employees younger than 30.
+13. List of (name and department) for employees younger than 30.
 14. Compute the total salary of employees in the "Finance" department.
 15. Find the average age of employees in the "Engineering" department.
 16. Create a list of names of employees who are in the "Marketing" or "HR" departments.
