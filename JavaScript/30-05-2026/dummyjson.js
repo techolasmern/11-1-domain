@@ -19,7 +19,7 @@ const request = async (api, config) => {
 const getAllProducts = async () => {
     try {
         const response = await request(BASE_URL + "/products")
-        console.log(response);
+        return response;
     } catch (e) {
         return e
     }
@@ -32,10 +32,10 @@ const addProduct = async (product) => {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(product)
         })
-        console.log(response);
+        return response;
     } catch (e) {
         return e;
     }
 }
 
-addProduct({title: "sdkfhgskdhfkjsdf"})
+addProduct({title: "sample "})
