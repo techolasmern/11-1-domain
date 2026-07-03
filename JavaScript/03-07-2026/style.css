@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+}
+
+.follower{
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    position: fixed;
+
+    transition: 0.3s linear;
+}
