@@ -9,11 +9,14 @@ btn.addEventListener("click", () => {
 
 document.addEventListener("contextmenu", (event) => {
     event.preventDefault();
+    customContextMenu.style.display = "none";
     const x = event.clientX;
     const y = event.clientY;
     customContextMenu.style.top = y + "px";
     customContextMenu.style.left = x + "px";
-    customContextMenu.style.display = "block";
+    setTimeout(() => {
+        customContextMenu.style.display = "block";
+    }, 0);
 });
 
 customContextMenu.addEventListener("click", () => {
