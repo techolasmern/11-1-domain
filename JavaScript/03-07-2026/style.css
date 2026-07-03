@@ -10,3 +10,12 @@ body{
 
     transition: 0.3s linear;
 }
+
+#custom-context-menu {
+    height: 150px;
+    width: 90px;
+    background-color: red;
+    position: fixed;
+    display: none;
+    transition: 0.3s linear;
+}
