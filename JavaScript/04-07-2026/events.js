@@ -50,4 +50,25 @@ const handleSubmit = () => {
     return false;
 }
 
+// DOM -> document Object Model
+// BOM -> browser Object Model
 
+const currentTitle = document.title;
+
+console.log(currentTitle);
+
+window.addEventListener("blur", () => {
+    document.title = "Come back 🥲"
+})
+
+window.addEventListener("focus", () => {
+    document.title = currentTitle;
+})
+
+window.addEventListener("scroll", e => {
+    console.log(window.scrollY);
+})
+
+window.addEventListener("resize", () => {
+    console.log(window.innerHeight, window.innerWidth);
+})
