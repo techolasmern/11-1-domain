@@ -1,46 +1,95 @@
-*{
-    margin: 0;
-    padding: 0;
+:root{
+    --primary-font: cursive;
 }
 
-.container{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: #f8fafc;
+    color: #334155;
+}
+
+.container {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
 }
 
-.frm{
-    padding: 15px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    margin-top: 50px;
-    max-width: 400px;
+.frm {
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    max-width: 600px;
     width: 100%;
-}
-
-.frm > div{
+    border: 1px solid #e2e8f0;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
-.error{
-    color: red;
+.frm > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.frm label {
     font-size: 14px;
+    font-weight: 600;
+    color: #475569;
 }
 
-.frm input{
-    padding: 10px;
-    outline: none;
-    border: 2px solid gray;
-    border-radius: 6px;
+.error {
+    color: #ef4444;
+    font-size: 13px;
+    margin-top: 4px;
+    font-weight: 500;
 }
 
-.frm button{
-    padding: 10px;
+.frm input {
+    font-family: var(--primary-font);
+    padding: 12px;
     outline: none;
-    background-color: rgb(128, 239, 128);
+    border: 1.5px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #1e293b;
+    transition: all 0.2s ease-in-out;
+}
+
+.frm input:focus {
+    border-color: #3b82f6;
+}
+
+.frm button {
+    font-family: var(--primary-font);
+    padding: 12px;
+    outline: none;
+    background-color: #22c55e;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
+    cursor: pointer;
     margin-top: 10px;
     width: 100%;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.frm button:hover {
+    background-color: #16a34a;
+}
+
+.frm button:active {
+    transform: scale(0.98);
 }

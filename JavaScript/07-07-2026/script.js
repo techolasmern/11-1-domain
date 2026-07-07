@@ -79,7 +79,8 @@ form.addEventListener("submit", event => {
         return;
     }
     const submitted = document.getElementById("form-submitted");
-    submitted.innerText = "Form submitted successfully";
     submitted.style.color = "green";
+    submitted.style.textAlign = "center";
+    submitted.innerText = "Form submitted successfully";
     form.reset();
 });
