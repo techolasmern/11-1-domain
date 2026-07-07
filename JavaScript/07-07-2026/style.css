@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.frm{
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 50px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.frm > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.error{
+    color: red;
+    font-size: 14px;
+}
+
+.frm input{
+    padding: 10px;
+    outline: none;
+    border: 2px solid gray;
+    border-radius: 6px;
+}
+
+.frm button{
+    padding: 10px;
+    outline: none;
+    background-color: rgb(128, 239, 128);
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    width: 100%;
+}
