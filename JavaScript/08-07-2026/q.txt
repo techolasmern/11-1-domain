@@ -1,0 +1,8 @@
+Student Activity Manager App
+     Features:
+         Add student
+         Edit/Delete
+         Total count
+         Save to LocalStorage
+         Search filter
+Uses DOM, Events, LocalStorage, Functions — perfect for revision

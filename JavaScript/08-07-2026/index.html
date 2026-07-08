@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Activity Manager App</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="form" name="form" class="form-container">
+        <div>
+            <label for="rn">Enter Roll Number:</label>
+            <input type="text" id="rn" name="rn" placeholder="Enter roll number...">
+            <span class="error"></span>
+        </div>
+        <div>
+            <label for="name">Enter Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter name...">
+            <span class="error"></span>
+        </div>
+        <div>
+            <label for="department">Enter Department:</label>
+            <input type="text" id="department" name="department" placeholder="Enter department...">
+            <span class="error"></span>
+        </div>
+        <div>
+            <label for="phone">Enter Phone:</label>
+            <input type="text" id="phone" name="phone" placeholder="Enter phone...">
+            <span class="error"></span>
+        </div>
+        <div>
+            <label for="email">Enter Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter email...">
+            <span class="error"></span> 
+        </div>
+        <button type="submit">Add Student</button>
+    </form>
+    <div class="student-container" id="student-container">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
