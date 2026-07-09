@@ -16,26 +16,26 @@
             <p>Drop us a message and we'll get back to you shortly.</p>
         </div>
 
-        <form class="contact-form">
+        <form class="contact-form" id="contact-form" name="contact_form">
             <div class="form-field">
                 <label for="name">Name</label>
-                <input type="text" id="name" required placeholder="John Doe">
+                <input type="text" id="name" name="name" required placeholder="John Doe">
             </div>
 
             <div class="form-field">
                 <label for="email">Email</label>
-                <input type="email" id="email" required placeholder="john@example.com">
+                <input type="email" id="email" name="email" required placeholder="john@example.com">
             </div>
 
             <div class="form-field">
                 <label for="message">Message</label>
-                <textarea id="message" rows="4" required placeholder="How can we help?"></textarea>
+                <textarea id="message" name="message" rows="4" required placeholder="How can we help?"></textarea>
             </div>
 
             <button type="submit" class="submit-action">Send Message</button>
         </form>
     </div>
-
+    <script src="contact.js"></script>
 </body>
 
 </html>
