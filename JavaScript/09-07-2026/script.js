@@ -12,7 +12,7 @@ const sendMail = async () => {
             template_id,
             user_id,
             template_params: { // check variables in your template;
-                email: "to_mail", 
+                email: "<replace with receiver email>", 
                 passcode: 103874,
                 time: 10,
                 companyName: "Techolas"
